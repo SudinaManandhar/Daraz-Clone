@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+    <div class="left">
+        <ion-img [src]="product.image" [ngClass]="{'new': true, 'new2':false}" alt = "{{ product.name }}"></ion-img>
+    </div>
+    <div class="right">
+        <ion-title [ngStyle] = "{'font-style': 'italic'}">{{ product.name }}</ion-title>
+        <ion-subtitle [ngStyle] = "getDynamicStyles()">{{ product.price }}</ion-subtitle>
+    </div>
+</div>

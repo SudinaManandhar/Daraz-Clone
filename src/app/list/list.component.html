@@ -1,0 +1,25 @@
+<body>
+  <h4>Flash Sale</h4>
+  <div class = "cards">
+    <ion-card *ngFor="let product of products" (click)="getDetails(product)"> <!--Passing the object itself as a parameter-->
+    
+      <ion-img [src]="product.image" [ngClass] = "{'classA': !showFull}" alt = "{{ product.name }}"></ion-img><br>
+        <ion-card-label>{{ product.name }}</ion-card-label><br>
+      <ion-card-subtitle>Rs.{{ product.price }}</ion-card-subtitle>
+      <ion-card-label><span class="strikethrough">Rs.{{ product.sellingPrice }} </span> -{{ 100-((product.price/product.sellingPrice)*100) | number: '1.0-0' }}%</ion-card-label>
+    </ion-card>
+  </div>
+
+  <!-- <ion-item *ngIf="selectedProduct">
+    <ion-label>Name:</ion-label>
+    <ion-text>{{ selectedProduct.name }}</ion-text>
+  </ion-item>
+  <ion-item *ngIf="selectedProduct">
+    <ion-label>Description:</ion-label>
+    <ion-text>Rs.{{ selectedProduct.price}}</ion-text>
+  </ion-item>
+  <ion-item *ngIf="selectedProduct">
+    <ion-label>Price:</ion-label>
+    <ion-text>Rs.{{ selectedProduct.sellingPrice }}</ion-text>
+  </ion-item> -->
+</body>

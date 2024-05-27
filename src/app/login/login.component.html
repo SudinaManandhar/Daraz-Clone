@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<body>
+  <h3>Welcome to Daraz! Please Login.</h3>
+  <!-- <p>
+    New member? <a>Register</a> here
+  </p> -->
+  <br>
+  <div class="login">
+    <div class="login-left">
+      <ion-input labelPlacement="stacked" label="Email Address or Phone Number" ngModel required email label-placement="floating" fill="outline"  [(ngModel)]= "email" placeholder="Please enter your Phone Number or Email "></ion-input>
+
+      <br><br>
+  
+      <ion-input labelPlacement="stacked" label="Password" ngModel required label-placement="floating" fill="outline" type = "password" [(ngModel)]= "password" placeholder="Please enter your Password"></ion-input>
+      <br>
+      <a href = "#">Reset your Password</a>
+
+      <p *ngIf="error" color="danger">{{ error }}</p>
+      
+    </div>
+    
+    <div class="login-right">
+      <ion-button class = "login-btn" (click)="login()">Login</ion-button>
+      <p>Or login with,</p>
+      <ion-button class = "fb-btn"><ion-icon name="logo-facebook"></ion-icon> &nbsp; Facebook</ion-button>
+      <ion-button class = "g-btn"><ion-icon name="logo-google"></ion-icon> &nbsp;Google</ion-button>
+      
+
+    </div>
+  </div>
+  
+</body>
+

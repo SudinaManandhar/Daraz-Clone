@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+<body>
+  <h3>Create Your Daraz Account.</h3>
+  <!-- <p>
+    New member? <a>Register</a> here
+  </p> -->
+  <br>
+  <div class="login">
+    <div class="login-left">
+      <ion-input labelPlacement="stacked" label="Email Address or Phone Number" ngModel required email label-placement="floating" fill="outline" placeholder="Please enter your Phone Number or Email "></ion-input>
+      <br><br>
+      <ion-input labelPlacement="stacked" label="Verification code from WhatsApp" ngModel required label-placement="floating" fill="outline" placeholder="Verification Code"></ion-input>
+      <br>
+      <a href = "#">Get code via other methods</a>
+      <br><br>
+      <ion-input labelPlacement="stacked" label="Password" ngModel required label-placement="floating" fill="outline" type = "password" placeholder="Please enter your Password"></ion-input>
+      <br>
+      <!-- <ion-list>
+        <ion-item>
+          <ion-select aria-label="Month" interface="popover" placeholder="Month">
+            <ion-select-option *ngFor="let option of options" [value]="option">{{ option }}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list> -->
+    </div>
+    
+    <div class="login-right">
+      <ion-input labelPlacement="stacked" label="Full Name" label-placement="floating" fill="outline" placeholder="Please enter your Full Name "></ion-input>
+      <br><ion-checkbox alignment="start" labelPlacement="end">I'd like to receive exclusive offers and promotions via SMS</ion-checkbox>
+      <br><ion-button class = "login-btn">Sign Up</ion-button>
+      <p>By clicking “SIGN UP”, I agree to Daraz's<a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+      <p>Or sign up with,</p>
+      <div class="btns">
+        <ion-button class = "fb-btn"><ion-icon name="logo-facebook"></ion-icon> &nbsp;Facebook</ion-button>
+        <ion-button class = "g-btn"><ion-icon name="logo-google"></ion-icon> &nbsp;Google</ion-button>
+      </div>
+      
+      
+
+    </div>
+  </div>
+</body>

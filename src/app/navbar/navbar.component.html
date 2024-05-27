@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+<ion-header>
+  <ion-toolbar class = "nav">
+    
+      <ion-title class = "title" routerLink = "/home">
+        <ion-img src = "assets/daraz.png" alt = "Daraz logo"></ion-img>
+      </ion-title>
+    
+      <ion-buttons slot="end">
+        <ion-item class="ion-align-items-center">
+          <ion-searchbar placeholder="Search in Daraz"></ion-searchbar>
+        </ion-item>
+
+        <ion-button routerLink="/login" routerDirection="forward" routerLinkActive="active">
+          <ion-icon name="person-outline"></ion-icon> &nbsp; Login
+        </ion-button>
+        I
+        <ion-button routerLink="/signup" routerDirection="forward" routerLinkActive="active">
+          Signup
+        </ion-button>
+
+        <ion-button>
+          <ion-icon name="globe-outline"></ion-icon> &nbsp;
+          <ion-list>
+            <ion-item>
+              <ion-select aria-label="language" interface="popover" placeholder = "EN">
+                <ion-select-option value="english">EN / English</ion-select-option>
+                <ion-select-option value="nepali">NE / Nepali</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-button>
+
+        <ion-button routerLink="/login" routerDirection="forward" routerLinkActive="active">
+          <ion-icon name="cart-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
